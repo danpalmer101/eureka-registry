@@ -1,0 +1,24 @@
+#=====================
+# Server configuration
+#=====================
+server:
+  port: 8099
+
+#======================
+# Logback configuration
+#======================
+logging:
+  pattern:
+    console: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: ERROR
+    org.springframework.web: WARN
+    io.danpalmer101: DEBUG
+
+#=====================
+# Eureka configuration
+#=====================
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
